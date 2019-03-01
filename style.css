@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #464646;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+    .wrapper .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .wrapper .form input {
+            background: #ddd;
+            color: #000;
+            flex: 1;
+            font-size: 1.5rem;
+            height: 3rem;
+            text-indent: 1.5rem;
+            border: none;
+            outline: none;
+        }
+            .wrapper .form input::placeholder {
+                color: #444;
+            }
+
+    .wrapper .btn {
+        width: 5rem;
+        height: 3rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: teal;
+        color: #fff;
+        font-size: 2rem;
+    }
+        .wrapper .btn:hover {
+            background: #069;
+        }
+        .wrapper .btn:active {
+            background: #069;
+        }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+    .list .list-item {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.5rem;
+        margin: .5rem;
+        padding: 1rem;
+        background: #777;
+        border-left: solid .2rem #ddd;
+    }
+    
+    .item-name {
+        flex: 1;
+        color: cyan;
+        font-size: 1.2rem;
+        border: none;
+        outline: none;
+        background: none;
+    }
+        .item-name:disabled {
+            color: #fff;            
+        }
+
+        .item-actions button {
+            width: 5rem;
+            height: 1.6rem;
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+        }
+            .item-actions button.edit {
+                background: #069;
+            }
+
+            .item-actions button.edit:hover {
+                background-color: skyblue;
+            }
+
+            .item-actions button.edit:active {
+                background-color: skyblue;
+            }
+
+            .item-actions button.remove {
+                background-color: coral;
+            }
+                .item-actions button.remove:hover {
+                        background-color: red;
+                    }
+
+                .item-actions button.remove:active {
+                    background-color: red;
+                }
+            
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
